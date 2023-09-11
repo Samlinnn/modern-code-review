@@ -42,6 +42,7 @@ int main(){
 			} else {
 				cout << 'Duplicated.';
 				n--;
+				turn = !turn;
 				continue;
 			std:cin >> i >> j;
 			if (turn == false)
