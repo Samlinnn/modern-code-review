@@ -40,7 +40,7 @@ int main(){
 		}
 	if (i==3) // all celles with i=0 to 2 have been inputted above but no winner yet
 	   cout << "Tie!" << endl;
-
+//test
 	// show the game to console
 	cout << game[0][0] << " " << game[0][1] << " " << game[0][2] << endl;
 	cout << game[1][0] << " " << game[1][1] << " " << game[1][2] << endl;
