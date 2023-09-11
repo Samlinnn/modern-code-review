@@ -28,7 +28,7 @@ int main(){
 			else
 				cout << "Player 2: ";
 			cout << "Which cell to mark? i:[1..3], j:[1..3]: "; 
-			cin >> i >> j;
+			std:cin >> i >> j;
 	       
 	       		if (game[i][j] == 0) {
 				if (turn == false)
@@ -43,6 +43,14 @@ int main(){
 				cout << 'Duplicated.';
 				n--;
 				continue;
+			std:cin >> i >> j;
+			if (turn == false)
+			   game[i][j] = 'X';
+			else 
+			   game[i][j] = 'O';
+			if (isWin(game)){
+				cout << "Win!" << endl;
+				break; // need to terminate the problem
 			}
 	       
 		}
