@@ -29,6 +29,21 @@ int main(){
 				cout << "Player 2: ";
 			cout << "Which cell to mark? i:[1..3], j:[1..3]: "; 
 			std:cin >> i >> j;
+	       
+	       		if (game[i][j] == 0) {
+				if (turn == false)
+				   game[i][j] = 'X';
+				else 
+				   game[i][j] = 'O';
+				if (isWin(game)){
+					cout << "Win!" << endl;
+					break; // need to terminate the problem
+				}
+			} else {
+				cout << 'Duplicated.';
+				n--;
+				continue;
+			std:cin >> i >> j;
 			if (turn == false)
 			   game[i][j] = 'X';
 			else 
@@ -37,6 +52,7 @@ int main(){
 				cout << "Win!" << endl;
 				break; // need to terminate the problem
 			}
+	       
 		}
 	if (n==9) //after 9 rounds there still no winner then print tie
 	   cout << "Tie!" << endl;
