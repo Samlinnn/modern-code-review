@@ -15,7 +15,7 @@ bool isWin(char game[3][3]){
 
 int main(){
 	int i, j;
-	char game[3][3] = {' '}; // Tic-tac-toe
+	char game[3][3] = {}; // Tic-tac-toe
 	// char game[3][3]= {} 
 	char player1 = 'X';
 	char player2 = 'O';
